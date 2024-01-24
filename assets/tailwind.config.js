@@ -1,5 +1,5 @@
 var baseURL = document.URL
-var imageURL = baseURL + 'assets/hero-image.png';
+var imageURL = baseURL + 'assets/hero-image.jpg';
 var didotURL = baseURL + 'assets/didot_bold-webfont.woff';
 
 

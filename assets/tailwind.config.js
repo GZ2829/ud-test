@@ -1,6 +1,6 @@
-var baseURL = document.URL.substring(0, document.URL.length - 8);
-var imageURL = baseURL + '/assets/hero-image.png';
-var didotURL = baseURL + '/assets/didot_bold-webfont.woff';
+var baseURL = document.URL
+var imageURL = baseURL + 'assets/hero-image.png';
+var didotURL = baseURL + 'assets/didot_bold-webfont.woff';
 
 
 // workaround to add Didot font

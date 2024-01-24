@@ -114,6 +114,15 @@ createApp({
             }
         }
 
+        function isSmallScreen(){
+
+            if(window.innerWidth < 640 || window.innerWidth > 640 && window.innerHeight < 1024){
+                return true
+            }else{
+                return false
+            }
+        }
+
         return {
             title,
             subtitle,
@@ -122,7 +131,8 @@ createApp({
             appear,
             initModalPopup,
             closeModalPopup,
-            toggleModalText
+            toggleModalText,
+            isSmallScreen
         }
     },
 
@@ -137,8 +147,6 @@ createApp({
                     flex 
                     bg-hero-woods 
                     bg-cover 
-                    sm:min-h-[1024px]
-                    min-h-[100vh] 
                     min-[1150px]:pl-[140px]
                     sm:pl-[20px]
                     sm:pr-[20px]
@@ -148,7 +156,9 @@ createApp({
                     pb-[25px]
                     items-end
                     relative
-                    ">
+                    "
+                    :class="[isSmallScreen ? 'min-h-[100vh]' : 'sm:min-h-[1024px]']"
+                    >
             <div name="atf_hero_textbox" class="sm:pl-[40px] pl-0 sm:mb-[46px] mb-[110px]">
                 <h1 name="atf_hero_title" class="min-[1150px]:text-title-d sm:text-title-t text-title-m font-didot text-white">{{ title }}</h1>
                 <div class="flex items-center max-[1150px]:mt-[20px]">

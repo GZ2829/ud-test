@@ -157,7 +157,7 @@ createApp({
                     items-end
                     relative
                     "
-                    :class="[isSmallScreen ? 'min-h-[100vh]' : 'sm:min-h-[1024px]']"
+                    :class="[isSmallScreen ? 'min-h-[100vh]' : 'min-h-[1024px]']"
                     >
             <div name="atf_hero_textbox" class="sm:pl-[40px] pl-0 sm:mb-[46px] mb-[110px]">
                 <h1 name="atf_hero_title" class="min-[1150px]:text-title-d sm:text-title-t text-title-m font-didot text-white">{{ title }}</h1>
